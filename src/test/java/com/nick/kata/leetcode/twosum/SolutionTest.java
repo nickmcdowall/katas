@@ -10,9 +10,6 @@ import java.util.Arrays;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.IsEqual.equalTo;
 
-/**
- * @See https://leetcode.com/problems/two-sum/
- */
 @RunWith(JUnitParamsRunner.class)
 public class SolutionTest {
 
@@ -28,7 +25,7 @@ public class SolutionTest {
             "0,3, -9, -2,15,11,-7",
     })
     @Test
-    public void findIndicesOfNumbersThatSumToMakeTarget(int index1, int index2, int target, String... numStrings) {
+    public void findIndicesOfTwoNumbersThatSumToMakeTarget(int index1, int index2, int target, String... numStrings) {
         int[] nums = convert(numStrings);
 
         int[] result = solution.twoSum(nums, target);

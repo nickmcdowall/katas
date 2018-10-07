@@ -3,7 +3,11 @@ package com.nick.kata.leetcode.twosum;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * @see <a href="https://leetcode.com/problems/two-sum/"</a>
+ */
 public class Solution {
+
     public int[] twoSum(int[] nums, int target) {
 
         Map<Integer, Integer> availableMatch = new HashMap<>();
@@ -19,6 +23,5 @@ public class Solution {
 
         return null;
     }
-
 
 }
